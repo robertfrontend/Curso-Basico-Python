@@ -21,9 +21,15 @@ def calculadora(type_opearcion):
             resultado =  input_1 - input_2
             lanzar_resultado('resta', resultado)
 
+
         if type_opearcion == 3:
             resultado =  input_1 * input_2
             lanzar_resultado('multiplicacion', resultado)
+
+        if type_opearcion == 4:
+            resultado = input_1 / input_2
+            lanzar_resultado('division', resultado)
+
     else: 
         print('Ingrese los valores correctamente')
         run()
@@ -41,6 +47,7 @@ def run():
     1 - Suma
     2 - Resta
     3 - Multiplicacion
+    4 - Division
     """
 
     tipo_operacion = int(input(type_text))
